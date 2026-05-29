@@ -1,0 +1,26 @@
+.projects_grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+figure {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.media {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+img, video {
+    max-width: 100%;
+    border-radius: 10%;
+}
+

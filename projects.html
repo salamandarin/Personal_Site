@@ -1,0 +1,83 @@
+<!-- Samuel Sutton -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d091b07dc3.js" crossorigin="anonymous"></script>
+
+    <script src="scripts/general_scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_beginning"> 
+            <!-- hamburger icon -->
+            <span class="hamburger button mobile tablet" onclick="hamburger()">&#9776;</span>
+
+            <!-- site logo -->
+            <a href="index.html" class="website_logo"><img src="media/general_images/logo.png"></a>
+        </div>
+
+        <!-- nav -->
+        <nav id="nav_links">
+            <a href="projects.html" class="button">Projects</a>
+            <a href="photos.html" class="button">Photo Gallery</a>
+            <a href="music.html" class="button">Music</a>
+        </nav>
+    </header>
+    <main>
+        <!-- GitHub link -->
+        <a
+            class="github_link"
+            href="https://github.com/salamandarin"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub <i class="fa-brands fa-github fa-10x"></i>
+        </a>
+
+
+        <!-------------------------------- PROJECTS GRID -------------------------------->
+        <div class="projects_grid"> 
+            <!-- music manager -->
+            <figure class="button">
+                <img src="media/projects/music_manager/music_manager.png">
+                <figcaption>Music Manager</figcaption>
+            </figure>
+
+            <!-- pixel board -->
+            <figure class="button">
+                <video autoplay loop>
+                    <source src="media/projects/pixel_board/pixel_simulator.mov">
+                </video>
+                <figcaption>Pixel Board</figcaption>
+            </figure>
+
+            <!-- EC Vue site -->
+            <figure class="button">
+                <video controls>
+                    <source src="media/projects/vue_site/vue_site_demo.mov">
+                </video>
+                <figcaption>Vue Site</figcaption>
+            </figure>
+        </div>
+
+    </main>
+</body>
