@@ -1,7 +1,5 @@
 /* Variables */
 :root {
-  --desktop-header-height: 60px;
-  --desktop-header-image-v-margin: 7px;
   --mobile-header-image-height: 15vw;
 }
 
@@ -18,14 +16,21 @@
 --------------------------------------------------------------------------------
 */   
 
+/* Entire Website */
 body {
     color: rgb(255, 255, 255);
     background-color:rgb(30, 30, 30);
     font-family: "Montserrat", sans-serif;
 }
 
+/* Main Body */
+main {
+    margin-top: var(--header-height); /* offset to fit header */
+}
+
 a {
     color: rgb(0, 136, 255);
+    cursor: pointer;
 }
 a:visited {
     color: rgb(221, 0, 255);
@@ -156,7 +161,6 @@ nav a:link {
     /*-------------------- MAIN BODY --------------------*/
     /* Main Body */
     main {
-        margin-top: var(--desktop-header-height);
         padding: 20px 8vw 50px 8vw;
     }
 
@@ -174,12 +178,12 @@ nav a:link {
 
     /* Website Logo */
     .website_logo {
-        margin: var(--desktop-header-image-v-margin) 15px;
+        margin: 7px 15px;
         height: max-content;
     }
     .website_logo img {
         display: block;
-        height: calc(var(--desktop-header-height) - (var(--desktop-header-image-v-margin) * 2)); 
+        height: 50px; 
     }
 
     /* Nav */
