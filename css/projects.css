@@ -1,17 +1,13 @@
-.projects_grid {
+/*-------------------- PROJECT LIST --------------------*/
+.project {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 30px;
-
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
+    background-color: rgb(0, 0, 0);
 
-figure {
-    background-color: black;
-    padding: 10px;
     border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 20px 75px;
 }
 
 .media {
@@ -21,6 +17,68 @@ figure {
 }
 img, video {
     max-width: 100%;
-    border-radius: 10%;
+    border-radius: 10px;
+}
+
+/* GitHub link */
+.github_link {
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+    margin-top: 10px;
+}
+
+/* Music Manager */
+.music_manager {
+    grid-template-columns: 70% 30%;
+}
+.music_manager
+.more_media {
+    grid-template-columns: 70% 30%;
+}
+
+/* Pixel Board */
+.pixel_board
+.media {
+    grid-template-columns: 49% 49%;
+    gap: 20px;
+}
+
+/* (Pixel Board) Employment */
+.employment {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--darkest-gray);
+
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 10px 0;
+}
+.company {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+/* Vue Website */
+.vue_site
+.media {
+    margin-top: 10px;
+}
+.vue_site
+.subtitle {
+    font-size: 1.17em;
+}
+
+/* Tic-Tac-Toe */
+.tic-tac-toe {
+    grid-template-columns: 30% 70%;
+}
+.tic-tac-toe
+.media {
+    grid-template-columns: 33% 67%;
+    gap: 20px;
 }
 

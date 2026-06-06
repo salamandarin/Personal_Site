@@ -1,0 +1,59 @@
+<!-- Samuel Sutton -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Website</title>
+    <link rel="stylesheet" href="../css/general_styles.css">
+    <link rel="stylesheet" href="../css/projects.css"> <!-- TODO: disconnect? -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="../scripts/general_scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_beginning"> 
+            <!-- hamburger icon -->
+            <span class="hamburger button mobile tablet" onclick="hamburger()">&#9776;</span>
+
+            <!-- site logo -->
+            <a href="../index.html" class="website_logo"><img src="../media/general_images/logo.png"></a>
+        </div>
+
+        <!-- nav -->
+        <nav>
+            <a href="../projects.html" class="button">Projects</a>
+            <a href="../photos.html" class="button">Photo Gallery</a>
+            <a href="../music.html" class="button">Music</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Vue EC Website -->
+        <div class="project vue_site">
+            <div class="text">
+                <h1>Vue.js Website (Discography Tracker)</h1>
+                <p class="subtitle">Frontend Developer and Database Management</p>
+                <ul>
+                    <li>Designed the frontend interface using Vue.js and Vuetify, ensuring seamless integration with a Go backend API</li>
+                    <li>Contributed to database creation and management using SQLite, overseeing a repository of over 200 tracks</li>
+                    <li>Utilized Git and GitHub for efficient project management, facilitating collaboration and ensuring the smooth handling of issues, branches, and pull requests</li>
+                </ul>
+            </div>
+            
+            <div class="media">
+                <video controls>
+                    <source src="../media/projects/vue_site/vue_site_demo.mov">
+                </video>
+            </div>
+    </main>
+</body>

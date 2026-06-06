@@ -1,0 +1,72 @@
+<!-- Samuel Sutton -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Board</title>
+    <link rel="stylesheet" href="../css/general_styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="../scripts/general_scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_beginning"> 
+            <!-- hamburger icon -->
+            <span class="hamburger button mobile tablet" onclick="hamburger()">&#9776;</span>
+
+            <!-- site logo -->
+            <a href="../index.html" class="website_logo"><img src="../media/general_images/logo.png"></a>
+        </div>
+
+        <!-- nav -->
+        <nav>
+            <a href="../projects.html" class="button">Projects</a>
+            <a href="../photos.html" class="button">Photo Gallery</a>
+            <a href="../music.html" class="button">Music</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Pixel Board -->
+        <div class="project pixel_board">
+            <div class="text">
+                <h1>Pixel Board Graphics Library</h1>
+                <ul>
+                    <li><b>Language:</b> C++</li>
+                </ul>
+
+                <div class="employment">
+                    <div class="company">
+                        <p>Wisconsin Lutheran College, Milwaukee, WI</p>
+                        <p>January 2023 - May 2023</p> 
+                    </div>
+                    <p class="job_title">Student Worker in Computer Science Department</p>
+                    <ul>
+                        <li>Wrote a C++ graphics library to make interacting with the department's Linux based pixel board simpler by creating easy-to-use functions for programmatically generating shapes and gradients, drawing lines and text, and uploading images</li>
+                        <li>Developed a pixel board simulator using SDL, enabling students to test programs prior to uploading onto the actual pixel board</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="media">
+                <video autoplay loop>
+                    <source src="../media/projects/pixel_board/pixel_simulator.mov">
+                </video>
+                <video autoplay loop>
+                    <source src="../media/projects/pixel_board/real_board.MOV">
+                </video>
+            </div>
+        </div>
+    </main>
+</body>
