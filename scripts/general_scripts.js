@@ -1,6 +1,6 @@
 // mobile nav bar hamburger button
 function hamburger() {
-    let menu = document.getElementById("nav_links");
+    let menu = document.querySelector("nav");
     if(menu.style.display === "block") {
       menu.style.display = "none";
     }

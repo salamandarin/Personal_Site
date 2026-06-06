@@ -1,8 +1,10 @@
 /* Variables */
 :root {
-    --background-color: rgb(30, 30, 30);
+    --darkest-gray: rgb(20, 20, 20);
+    --background-dark-gray: rgb(30, 30, 30);
     --dark-gray-2: rgb(44, 44, 44);
     --light-gray: rgba(255, 255, 255, 0.7);
+    --off-white: rgba(255, 255, 255, 0.9);
     --red: rgb(180, 0, 0);
 
     --mobile-header-image-height: 15vw;
@@ -24,7 +26,7 @@
 /* Entire Website */
 body {
     color: white;
-    background-color: var(--background-color);
+    background-color: var(--background-dark-gray);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -33,6 +35,7 @@ main {
     margin-top: var(--header-height); /* offset to fit header */
 }
 
+/* Links */
 a {
     color: rgb(0, 136, 255);
     cursor: pointer;
@@ -44,6 +47,7 @@ a:hover {
     color: rgb(0, 187, 255);
 }
 
+/*-------------------- UNIVERSAL ADDITIVE STYLE CLASSES --------------------*/
 /* Button Class */
 .button {
     cursor: pointer;
@@ -51,6 +55,11 @@ a:hover {
 .button:hover {
     transition: transform .1s; /* animation speed */
     transform: scale(1.01); /* increase size */
+}
+
+/* Font Class */
+.code_font {
+    font-family: "Courier Prime", monospace;
 }
 
 /*-------------------- HEADER BAR --------------------*/
@@ -87,10 +96,23 @@ nav a:link {
         display: block;
     }
 
-    /*-------------------- MAIN BODY --------------------*/
+    /*-------------------- GENERAL FORMATTING --------------------*/
     /* Main Body */
     main {
         padding: 10px 8vw 50px 8vw;
+    }
+
+    /* Lists (UL) */
+    ul {
+        margin-left: 24px;
+    }
+    ul li {
+        margin-top: 2px;
+    }
+
+    /* Left Indent */
+    .left_indent {
+        margin-left: 10px;
     }
     
     /*-------------------- HEADER BAR --------------------*/
@@ -142,7 +164,7 @@ nav a:link {
     }
     /* Nav Buttons */
     nav .button:active {
-        background-color: var(--background-color);
+        background-color: var(--darkest-gray);
         color: var(--light-gray);
     }
 }
@@ -164,11 +186,25 @@ nav a:link {
         display: none;
     }
 
-    /*-------------------- MAIN BODY --------------------*/
+    /*-------------------- GENERAL FORMATTING --------------------*/
     /* Main Body */
     main {
         padding: 20px 8vw 50px 8vw;
     }
+
+    /* Lists (UL) */
+    ul {
+        margin-left: 40px;
+    }
+    ul li {
+        margin-top: 8px;
+    }
+
+    /* Left Indent */
+    .left_indent {
+        margin-left: 20px;
+    }
+    
 
     /*-------------------- HEADER BAR --------------------*/
     /* Header Bar */

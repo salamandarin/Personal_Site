@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/d091b07dc3.js" crossorigin="anonymous"></script> <!-- for GitHub logo -->
+
     <script src="scripts/general_scripts.js"></script>
 </head>
 
@@ -35,33 +37,62 @@
         </div>
 
         <!-- nav -->
-        <nav id="nav_links">
+        <nav>
             <a href="projects.html" class="button">Projects</a>
             <a href="photos.html" class="button">Photo Gallery</a>
             <a href="music.html" class="button">Music</a>
         </nav>
     </header>
-    <main class="home_page">
-        <!-- about me -->
-        <h1>About Me</h1>
-
-
-        <h3>Links</h3>
-        <ul>
-            <li><a
+    <main>
+        <!-------------------------------- ABOUT ME -------------------------------->
+        <div class="about_me code_font">
+            <h1>Samuel Sutton</h1>
+            <p>
+                B.S. in Computer Science • Aspiring Software Engineer
+            </p>
+            <a
+                class="github_link"
                 href="https://github.com/salamandarin"
                 target="_blank"
                 rel="noopener noreferrer"
-                >GitHub
-                </a>
-            </li>
-            <li><a
-                href="http://www.linkedin.com/in/samuel-sutton-4385782a5"
+                >Github<i class="fa-brands fa-github-square fa-5x"></i>
+            </a>
+        </div>
+
+        <!-------------------------------- PROJECTS GRID -------------------------------->
+        <h1 class="projects_title">Projects</h1>
+        <div class="projects_grid"> 
+            <!-- music manager -->
+            <a href="projects/music_manager.html" class="project button">
+                <img src="media/projects/music_manager/music_manager.png">
+                <h3>Music Manager</h3>
+            </a>
+
+            <!-- pixel board -->
+            <a href="projects/pixel_board.html" class="project button">
+                <video autoplay loop>
+                    <source src="media/projects/pixel_board/pixel_simulator.mov">
+                </video>
+                <h3>Pixel Board Graphics Library</h3>
+            </a>
+
+            <!-- EC Vue site -->
+            <a href="projects/vue_site.html" class="project button">
+                <video controls>
+                    <source src="media/projects/vue_site/vue_site_demo.mov">
+                </video>
+                <h3>Vue.js Website</h3>
+            </a>
+
+            <!-- networked tic-tac-toe -->
+            <a href="https://github.com/salamandarin/Networked-Tic-Tac-Toe"
                 target="_blank"
                 rel="noopener noreferrer"
-                >LinkedIn
-                </a>
-            </li>
-        </ul>
+                class="project button">
+                <img src="media/projects/tic-tac-toe/tic-tac-toe-cropped.png">
+                <h3>Networked Tic-Tac-Toe</h3>
+            </a>
+        </div>
+
     </main>
 </body>

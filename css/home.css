@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+}
+
+/*-------------------- ABOUT ME --------------------*/
+.about_me p {
+    text-align: center;
+}
+.about_me {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.about_me .links { 
+    margin-top: 10px;
+}
+
+.github_link {
+    text-align: center;
+}
+
+/*-------------------- PROJECTS --------------------*/
+.projects_title {
+    margin-top: 20px;
+}
+
+/* Projects Grid */
+.projects_grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Project Card */
+.project {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    display: grid;
+    align-items: center;
+}
+.project:hover {
+    background-color: var(--red);
+}
+
+/* Project Card Text */
+.project h3 {
+    margin-top: 10px;
+    color: var(--off-white);
+}
+
+img, video {
+    max-width: 100%;
+    border-radius: 10px;
+}
