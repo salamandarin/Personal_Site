@@ -1,0 +1,97 @@
+<!-- Samuel Sutton -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Manager</title>
+    <link rel="stylesheet" href="../css/general_styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d091b07dc3.js" crossorigin="anonymous"></script> <!-- for GitHub logo -->
+
+    <script src="../scripts/general_scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_beginning"> 
+            <!-- hamburger icon -->
+            <span class="hamburger button mobile tablet" onclick="hamburger()">&#9776;</span>
+
+            <!-- site logo -->
+            <a href="../index.html" class="website_logo"><img src="../media/general_images/logo.png"></a>
+        </div>
+
+        <!-- nav -->
+        <nav>
+            <a href="../projects.html" class="button">Projects</a>
+            <a href="../photos.html" class="button">Photo Gallery</a>
+            <a href="../music.html" class="button">Music</a>
+        </nav>
+    </header>
+    <main>
+
+
+        <!-- Music Manager -->
+        <div class="project music_manager">
+
+            <!---------------------- SECTION 1 ---------------------->
+            <div class="section_1">
+                <!-- core bullet points -->
+                <div>
+                    <h1>Music Manager</h1>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://github.com/salamandarin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ><i class="fa-brands fa-github fa-xl"></i>
+                                GitHub repository
+                            </a>
+                        </li>
+                        <li><b>Language(s): C++</b></li>
+                        <li><b>Libraries:</b> Qt, TagLib</li>
+                        <li><b>Database:</b> SQLite</li>
+                    </ul>
+
+                    <!-- features -->
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Supports MP3, AAC, WAV, AIFF, FLAC, and ALAC files</li>
+                        <li>Add & delete music files</li>
+                        <li>Edit tracks & metadata</li>
+                        <li>Displays all tracks, albums, & artists</li>
+                        
+                        <li>SQLite database</li>
+                        <li>Qt GUI</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="media">
+                    <img src="../media/projects/music_manager/music_manager.png">
+                </div>
+            </div>
+
+            <!---------------------- SECTION 2 ---------------------->
+            <div class="section_2">
+                <!-- resume text -->
+                <ul>
+                    <li>Developed a full-stack C++ application for managing digital audio files with a Qt-based GUI for intuitive browsing and editing</li>
+                    <li>Integrated a SQLite database for persistent storage, enabling more comprehensive data handling beyond standard file metadata</li>
+                    <li>Employed TagLib for cross-format audio metadata extraction and editing</li>
+                </ul>
+    </main>
+</body>
