@@ -12,10 +12,10 @@ h1 {
     margin: 10px 30px;
 }
 .about_me
-h1 {
-    font-weight: normal;
-    font-size: 4em;
-    margin-bottom: 30px;
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 .about_me
 a, p {
