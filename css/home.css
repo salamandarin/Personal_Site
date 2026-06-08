@@ -1,40 +1,32 @@
-h1 {
-    text-align: center;
-}
+/*
+--------------------------------------------------------------------------------
+        Styles for All Sizes
+--------------------------------------------------------------------------------
+*/   
 
 /*-------------------- ABOUT ME --------------------*/
 .about_me {
     text-align: center;
     background-color: black;
-
-    border-radius: 10px;
-    padding: 30px 20px;
-    margin: 10px 30px;
 }
 .about_me
 img {
     display: block;
     margin: auto;
-    width: 50%;
 }
 .about_me
 a, p {
     display: inline-block;
-    font-size: 1.4em;
 }
-
 
 /*-------------------- PROJECTS --------------------*/
 .projects_title {
-    margin-top: 20px;
+    text-align: center;
 }
 
 /* Projects Grid */
 .projects_grid {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 30px;
-
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -43,11 +35,7 @@ a, p {
 /* Project Card */
 .project {
     background-color: black;
-    padding: 10px;
-    border-radius: 10px;
-
     text-decoration: none;
-
     display: grid;
     align-items: center;
 }
@@ -57,11 +45,131 @@ a, p {
 
 /* Project Card Text */
 .project h3 {
-    margin-top: 10px;
     color: var(--off-white);
 }
 
-img, video {
-    max-width: 100%;
-    border-radius: 10px;
+/*
+--------------------------------------------------------------------------------
+        ^ Styles for All Sizes ^
+--------------------------------------------------------------------------------
+*/        
+
+/*
+--------------------------------------------------------------------------------
+        Mobile Only Styles
+--------------------------------------------------------------------------------
+*/      
+@media all and (max-width: 849px) {
+    .desktop {
+        display: none;
+    }  
+    .mobile {
+        display: block;
+    }
+
+    /*-------------------- ABOUT ME --------------------*/
+    .about_me {
+        padding: 10px 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    .about_me
+    img {
+        width: 90%;
+    }
+    .about_me
+    a, p {
+        font-size: 3vw;
+    }
+
+    /*-------------------- PROJECTS --------------------*/
+    .projects_title {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 5vw;
+    }
+
+    /* Projects Grid */
+    .projects_grid {
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    /* Project Card */
+    .project {
+        padding: 5px;
+        border-radius: 7px;
+    }
+    img, video {
+        border-radius: 5px;
+    }
+
+    /* Project Card Text */
+    .project h3 {
+        margin-top: 5px;
+        font-size: 2.5vw;
+    }
 }
+/*
+--------------------------------------------------------------------------------
+        ^ Mobile Only Styles ^
+--------------------------------------------------------------------------------
+*/      
+/*
+--------------------------------------------------------------------------------
+        Desktop Only Styles
+--------------------------------------------------------------------------------
+*/    
+@media all and (min-width: 850px) {
+    .desktop {
+        display: block;
+    }  
+    .mobile {
+        display: none;
+    }
+
+    /*-------------------- ABOUT ME --------------------*/
+    .about_me {
+        padding: 30px 20px;
+        margin: 10px 30px;
+    }
+    .about_me
+    img {
+        width: 50%;
+    }
+    .about_me
+    a, p {
+        font-size: 1.4em;
+    }
+
+    /*-------------------- PROJECTS --------------------*/
+    .projects_title {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    /* Projects Grid */
+    .projects_grid {
+        grid-template-columns: 33% 33% 33%;
+        gap: 30px;
+    }
+
+    /* Project Card */
+    .project {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    img, video {
+        border-radius: 10px;
+    }
+
+    /* Project Card Text */
+    .project h3 {
+        margin-top: 10px;
+    }
+}
+/*
+--------------------------------------------------------------------------------
+        ^ Desktop Only Styles ^
+--------------------------------------------------------------------------------
+*/  
