@@ -1,13 +1,19 @@
-/*-------------------- PROJECT LIST --------------------*/
+/*
+--------------------------------------------------------------------------------
+        Styles for All Sizes
+--------------------------------------------------------------------------------
+*/   
+
+/*-------------------- PROJECTS - LIST STYLE --------------------*/
+.github_link {
+    display: block;
+    text-align: center;
+}
 .project {
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding: 20px 75px;
 }
 
 .media {
@@ -15,85 +21,227 @@
     justify-content: center;
     align-items: center;
 }
-img, video {
-    max-width: 100%;
-    border-radius: 10px;
-}
 
-.github_link {
-    display: block;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+/*-------------------- INDIVIDUAL PROJECTS --------------------*/
 
-/* Music Manager */
-.music_manager
-.section_1 {
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-.music_manager
-.section_1
-h1 {
-    margin-bottom: 20px;
-}
-.music_manager
-.section_1
-h2 {
-    margin-top: 20px;
-}
-/* Music Manager - Section 2 */
-.music_manager
-.section_2 {
-    margin-top: 20px;
-}
-
-/* Pixel Board */
-.pixel_board
-.media {
-    grid-template-columns: 49% 49%;
-    gap: 20px;
-}
 /* (Pixel Board) Employment */
 .employment {
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--darkest-gray);
-
-    border-radius: 10px;
-    padding: 20px 30px;
-    margin: 10px 0;
 }
 .company {
     font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
-
+.company * {
+    margin-bottom: 10px;
+}
+.job_title {
+    margin-bottom: 20px;
+}
+.pixel_board
+li {
+    margin-bottom: 10px;
+}
 
 /* Vue Website */
 .vue_site
-.media {
-    margin-top: 10px;
-}
-.vue_site
 .subtitle {
-    font-size: 1.17em;
+    font-style: italic;
 }
 
-/* Tic-Tac-Toe */
-.tic-tac-toe
-.text {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.tic-tac-toe
-.media {
-    margin-top: 10px;
-}
-.tic-tac-toe
-img {
-    max-height: 250px;
-}
+/*
+--------------------------------------------------------------------------------
+        ^ Styles for All Sizes ^
+--------------------------------------------------------------------------------
+*/    
+/*
+--------------------------------------------------------------------------------
+        Mobile Only Styles
+--------------------------------------------------------------------------------
+*/      
+@media all and (max-width: 849px) {
+    .desktop {
+        display: none;
+    }  
+    .mobile {
+        display: block;
+    }
 
+    /*-------------------- PROJECTS - LIST STYLE --------------------*/
+    .github_link {
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+
+    .project {
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 15px 25px;
+    }
+
+    img, video {
+        border-radius: 7px;
+    }
+
+    /*-------------------- INDIVIDUAL PROJECTS --------------------*/
+
+    /* Music Manager */
+    .music_manager
+    .section_1
+    h1 {
+        margin-bottom: 10px;
+    }
+    .music_manager
+    .section_1
+    h2 {
+        margin-top: 20px;
+    }
+    .music_manager
+    .media {
+        margin-top: 20px;
+    }
+    /* Music Manager - Section 2 */
+    .music_manager
+    .section_2 {
+        margin-top: 10px;
+    }
+
+    /* Pixel Board */
+    .pixel_board
+    video:first-child {
+        margin-bottom: 10px;
+    }
+    /* (Pixel Board) Employment */
+    .employment {
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: 10px 0;
+    }
+
+    /* Vue Site */
+    .vue_site
+    .subtitle {
+        margin: 10px 0;
+    }
+    .vue_site
+    .media {
+       margin-bottom: 10px;
+    }
+
+    /* Tic-Tac-Toe */
+    .tic-tac-toe
+    .section_1
+    img {
+        display: block;
+        justify-content: center;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+}
+/*
+--------------------------------------------------------------------------------
+        ^ Mobile Only Styles ^
+--------------------------------------------------------------------------------
+*/      
+/*
+--------------------------------------------------------------------------------
+        Desktop Only Styles
+--------------------------------------------------------------------------------
+*/    
+@media all and (min-width: 850px) {
+    .desktop {
+        display: block;
+    }  
+    .mobile {
+        display: none;
+    }
+
+    /*-------------------- PROJECTS - LIST STYLE --------------------*/
+    .github_link {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .project {
+        border-radius: 10px;
+        margin-bottom: 50px;
+        padding: 20px 75px;
+    }
+
+    img, video {
+        border-radius: 10px;
+    }
+
+    /*-------------------- INDIVIDUAL PROJECTS --------------------*/
+
+    /* Music Manager */
+    .music_manager
+    .section_1 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .music_manager
+    .section_1
+    h1 {
+        margin-bottom: 20px;
+    }
+    .music_manager
+    .section_1
+    h2 {
+        margin-top: 20px;
+    }
+    /* Music Manager - Section 2 */
+    .music_manager
+    .section_2 {
+        margin-top: 20px;
+    }
+
+    /* Pixel Board */
+    .pixel_board
+    .media {
+        grid-template-columns: 49% 49%;
+        gap: 20px;
+    }
+    /* (Pixel Board) Employment */
+    .employment {
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: 10px 0;
+    }
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    /* Vue Website */
+    .vue_site
+    .media {
+        margin-top: 10px;
+    }
+    .vue_site
+    .subtitle {
+        font-size: 1.17em;
+    }
+
+    /* Tic-Tac-Toe */
+    .tic-tac-toe
+    .section_1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .tic-tac-toe
+    .media {
+        margin-top: 10px;
+    }
+    .tic-tac-toe
+    img {
+        max-height: 250px;
+    }
+}
+/*
+--------------------------------------------------------------------------------
+        ^ Desktop Only Styles ^
+--------------------------------------------------------------------------------
+*/  

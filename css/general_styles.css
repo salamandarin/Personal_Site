@@ -112,7 +112,7 @@ nav a:link {
         margin-left: 24px;
     }
     ul li {
-        margin-top: 2px;
+        margin-top: 5px;
     }
 
     /* Left Indent */
@@ -160,13 +160,11 @@ nav a:link {
         display: block;
         text-align: center;
 
-        margin-top: 5px;
+        margin-bottom: 5px;
         padding: 3px;
         font-size: 5vw;
     }
-    nav a:first-child {
-        margin-top: 0px;
-    }
+    nav a :last-
     /* Nav Buttons */
     nav .button:active {
         background-color: var(--darkest-gray);
