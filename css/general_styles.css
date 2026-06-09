@@ -149,6 +149,7 @@ nav a:link {
     }
     .website_logo img {
         height: var(--mobile-header-image-height);
+        max-width: 100vw;
     }
 
     /* Nav */
@@ -164,7 +165,7 @@ nav a:link {
         padding: 3px;
         font-size: 5vw;
     }
-    nav a :last-
+    
     /* Nav Buttons */
     nav .button:active {
         background-color: var(--darkest-gray);
