@@ -154,6 +154,7 @@ nav a:link {
 
     /* Nav */
     nav {
+        display: none;
         width: 100%;
     }
     nav a {
