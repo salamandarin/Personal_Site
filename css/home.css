@@ -92,13 +92,13 @@ a, p {
 
     /* Projects Grid */
     .projects_grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 80%;
         gap: 10px;
     }
 
     /* Project Card */
     .project {
-        padding: 5px;
+        padding: 10px;
         border-radius: 7px;
     }
     img, video {
@@ -108,7 +108,7 @@ a, p {
     /* Project Card Text */
     .project h3 {
         margin-top: 5px;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 }
 /*
