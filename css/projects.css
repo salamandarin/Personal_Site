@@ -87,28 +87,18 @@ li {
 
     /* Music Manager */
     .music_manager
-    .section_1
-    h1 {
+    h1, h2 {
         margin-bottom: 10px;
     }
     .music_manager
-    .section_1
-    h2 {
-        margin-top: 20px;
-    }
-    .music_manager
-    .media {
-        margin-top: 20px;
+    ul {
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     .music_manager
     .media 
     * {
         margin-bottom: 15px;
-    }
-    /* Music Manager - Section 2 */
-    .music_manager
-    .section_2 {
-        margin-top: 10px;
     }
 
     /* Pixel Board */
@@ -188,24 +178,25 @@ li {
     }
     .music_manager
     .section_1
-    h1 {
-        margin-bottom: 20px;
+    .left {
+        margin-right: 20px; /* gap between left & right columns */
     }
     .music_manager
-    .section_1
-    h2 {
-        margin-top: 20px;
+    ul {
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .music_manager
     .media 
     * {
         margin-bottom: 15px;
-        margin-left: 25px;
     }
-    /* Music Manager - Section 2 */
     .music_manager
-    .section_2 {
-        margin-top: 20px;
+    .section_2
+    .media {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 4%
     }
 
     /* Pixel Board */
