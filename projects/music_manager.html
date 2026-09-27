@@ -46,6 +46,13 @@
 
             <!---------------------- SECTION 1 ---------------------->
             <div class="section_1">
+                <!-- TODO: intro description -->
+                <!-- TODO: intro description -->
+                <!-- TODO: intro description -->
+                <!-- TODO: intro description -->
+                <!-- TODO: intro description -->
+                <!-- TODO: intro description -->
+
                 <!-- core bullet points -->
                 <div>
                     <h1>Music Manager</h1>
@@ -76,21 +83,31 @@
                         <li>Qt GUI</li>
                     </ul>
 
-
                 </div>
 
                 <div class="media">
                     <img src="../media/projects/music_manager/music_manager.png">
+                    <img src="../media/projects/music_manager/track_popup.png">
                 </div>
             </div>
 
             <!---------------------- SECTION 2 ---------------------->
             <div class="section_2">
+
+                <div class="media">
+                    <video controls>
+                        <source src="../media/projects/music_manager/qt_demo.mov">
+                    </video>
+                    <img src="../media/projects/music_manager/architecture.png">
+                </div>
+                
                 <!-- resume text -->
                 <ul>
-                    <li>Developed a full-stack C++ application for managing digital audio files with a Qt-based GUI for intuitive browsing and editing</li>
-                    <li>Integrated a SQLite database for persistent storage, enabling more comprehensive data handling beyond standard file metadata</li>
-                    <li>Employed TagLib for cross-format audio metadata extraction and editing</li>
+                    <li>Designed and built a C++/Qt desktop music management application for cataloging both physical audio files and tracks without associated files, representing lost or unreleased media that conventional music managers cannot log</li>
+                    <li>Architected a 3-layer application with a centralized core interface, decoupling the Qt GUI from the backend and enabling the GUI to be replaced without modifying backend logic</li>
+                    <li>Developed file and metadata management supporting 6 file types, including metadata read/write operations, automatic cover art extraction, Unicode filename sanitization, and file system/database synchronization</li>
+                    <li>Designed a relational SQLite database for tracks, artists, and albums, implementing logic to automatically create, associate, and remove related records as library contents change</li>
+                    <li>Planned a 3-phase roadmap with architecture diagrams, database schema, and UI mockups to establish system architecture and project scope before implementation</li>
                 </ul>
             </div>
         </div>
