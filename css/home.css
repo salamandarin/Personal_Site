@@ -7,7 +7,7 @@
 /*-------------------- ABOUT ME --------------------*/
 .about_me {
     text-align: center;
-    background-color: black;
+    background-color: var(--primary-color);
 }
 .about_me
 img {
@@ -34,7 +34,7 @@ a, p {
 
 /* Project Card */
 .project {
-    background-color: black;
+    background-color: var(--primary-color);
     text-decoration: none;
     display: grid;
     align-items: center;
@@ -45,7 +45,7 @@ a, p {
 
 /* Project Card Text */
 .project h3 {
-    color: var(--off-white);
+    color: var(--highlighted-white);
 }
 
 /*
