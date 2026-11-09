@@ -43,24 +43,18 @@ a, p {
 
 /* Project Card */
 .project {
-    text-decoration: none;
     display: grid;
     align-items: center;
-}
-.project:hover {
-    border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card" class */
 
-    /* card-tertiary Class */
-    background-color: var(--tertiary-dark);
-    border-left: 5px solid var(--tertiary-color);
-}
-
-
-/* Project Card Text */
-.project h3 {
     color: var(--text-dark);
 }
+.project:hover {
+    border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card_primary" class */
 
+    /* Tertiary Card class (vertical version) */
+    background-color: var(--tertiary-dark);
+    border-top: 5px solid var(--tertiary-color);
+}
 /*
 --------------------------------------------------------------------------------
         ^ Styles for All Sizes ^

@@ -8,15 +8,7 @@
 .github_link {
     display: block;
     text-align: center;
-
-    text-decoration: none;
     color: var(--tertiary-color);
-}
-.github_link:visited {
-    color: var(--tertiary-color);
-}
-.github_link:hover {
-    color: red;
 }
 
 .project {
