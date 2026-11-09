@@ -42,9 +42,10 @@ a, p {
 
 /* Project Card */
 .project {
-    text-decoration: none;
     display: grid;
     align-items: center;
+
+    color: var(--text-dark);
 }
 .project:hover {
     border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card" class */
@@ -53,13 +54,6 @@ a, p {
     background-color: var(--tertiary-dark);
     border-top: 5px solid var(--tertiary-color);
 }
-
-
-/* Project Card Text */
-.project h3 {
-    color: var(--text-dark);
-}
-
 /*
 --------------------------------------------------------------------------------
         ^ Styles for All Sizes ^
