@@ -48,7 +48,7 @@ a, p {
     color: var(--text-dark);
 }
 .project:hover {
-    border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card" class */
+    border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card_primary" class */
 
     /* Tertiary Card class (vertical version) */
     background-color: var(--tertiary-dark);

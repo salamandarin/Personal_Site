@@ -32,10 +32,8 @@
         column-count: 2;
         column-gap: 10px;
     }
-    .photos
-    .card {
-        padding: 0;
-        margin-bottom: 5px;
+    .photos > * {
+        margin-bottom: 10px;
     }
 }
 /*
@@ -66,9 +64,7 @@
         column-count: 4;
         column-gap: 20px;
     }
-    .photos
-    .card {
-        padding: 0;
+    .photos > * {
         margin-bottom: 20px;
     }
 }

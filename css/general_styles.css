@@ -97,7 +97,7 @@ img, video {
 }
 
 /* Card Classes */
-.primary { /* Card color */
+.card_primary { /* Card color */
     border-left: 5px solid var(--secondary-color);
     border-top: 2px solid var(--secondary-dark);
     border-right: 2px solid var(--secondary-dark);
@@ -105,17 +105,17 @@ img, video {
 
     /* background-color: color-mix(in oklab, var(--primary-color), white 17%); */
 }
-.primary-vertical { /* Card color */
+.card_primary_vertical { /* Card color */
     border-left: 2px solid var(--secondary-dark);
     border-top: 5px solid var(--secondary-color);
     border-right: 2px solid var(--secondary-dark);
     border-bottom: 2px solid var(--secondary-dark);
 }
-.secondary { /* Card color */
+.card_secondary { /* Card color */
     background-color: var(--secondary-dark);
     border-left: 5px solid var(--secondary-color);
 }
-.tertiary { /* Card color */
+.card_tertiary { /* Card color */
     background-color: var(--tertiary-dark);
     border-left: 5px solid var(--tertiary-color);
 }
@@ -173,7 +173,7 @@ header {
 
     /*-------------------- STYLE CLASSES --------------------*/
     /* Card Class */
-    .card {
+    .card_padding {
         padding: 20px;
     }
     
@@ -269,7 +269,7 @@ header {
 
     /*-------------------- STYLE CLASSES --------------------*/
     /* Card Class */
-    .card {
+    .card_padding {
         padding: 25px;
     }
     
