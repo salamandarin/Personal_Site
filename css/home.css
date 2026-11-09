@@ -146,7 +146,7 @@ a, p {
     /*-------------------- ABOUT ME --------------------*/
     .about_me {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 35% 65%;
 
         padding: 30px 20px;
         margin: 10px 30px;
