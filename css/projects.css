@@ -10,7 +10,7 @@
     text-align: center;
 
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--tertiary-color);
 }
 .github_link:visited {
     color: var(--tertiary-color);
