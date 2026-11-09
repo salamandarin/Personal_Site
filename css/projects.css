@@ -8,12 +8,21 @@
 .github_link {
     display: block;
     text-align: center;
+
+    text-decoration: none;
+    color: var(--text-color);
 }
+.github_link:visited {
+    color: var(--tertiary-color);
+}
+.github_link:hover {
+    color: red;
+}
+
 .project {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
 }
 
 .media {
@@ -27,7 +36,6 @@
 /* (Pixel Board) Employment */
 .employment {
     font-family: 'Times New Roman', Times, serif;
-    background-color: var(--secondary-color);
 }
 .company {
     font-weight: bold;
@@ -69,18 +77,14 @@ li {
 
     /*-------------------- PROJECTS - LIST STYLE --------------------*/
     .github_link {
-        font-size: 5vw;
-        margin-bottom: 5px;
+        font-size: 3vw;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 
     .project {
-        border-radius: 10px;
         margin-bottom: 30px;
         padding: 15px 25px;
-    }
-
-    img, video {
-        border-radius: 7px;
     }
 
     /*-------------------- INDIVIDUAL PROJECTS --------------------*/
@@ -108,7 +112,6 @@ li {
     }
     /* (Pixel Board) Employment */
     .employment {
-        border-radius: 10px;
         padding: 20px 30px;
         margin: 10px 0;
     }
@@ -154,18 +157,14 @@ li {
 
     /*-------------------- PROJECTS - LIST STYLE --------------------*/
     .github_link {
-        font-size: 2em;
-        margin-bottom: 10px;
+        font-size: 1.2em;
+        padding: 15px;
+        margin-bottom: 12px;
     }
 
     .project {
-        border-radius: 10px;
         margin-bottom: 50px;
         padding: 20px 75px;
-    }
-
-    img, video {
-        border-radius: 10px;
     }
 
     /*-------------------- INDIVIDUAL PROJECTS --------------------*/
@@ -208,7 +207,6 @@ li {
     }
     /* (Pixel Board) Employment */
     .employment {
-        border-radius: 10px;
         padding: 20px 30px;
         margin: 10px 0;
     }

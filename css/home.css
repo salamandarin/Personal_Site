@@ -7,11 +7,16 @@
 /*-------------------- ABOUT ME --------------------*/
 .about_me {
     text-align: center;
-    background-color: var(--primary-color);
 }
 .about_me
 img {
     display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+.samuel_drawn {
+    display: grid;
+    justify-content: center;
     margin: auto;
 }
 .about_me
@@ -22,6 +27,10 @@ a, p {
 /*-------------------- PROJECTS --------------------*/
 .projects_title {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid var(--secondary-dark);
+    width: 100%;
 }
 
 /* Projects Grid */
@@ -34,18 +43,22 @@ a, p {
 
 /* Project Card */
 .project {
-    background-color: var(--primary-color);
     text-decoration: none;
     display: grid;
     align-items: center;
 }
 .project:hover {
-    background-color: var(--red);
+    border: 2px solid var(--tertiary-dark); /* Replaces gray border from "card" class */
+
+    /* card-tertiary Class */
+    background-color: var(--tertiary-dark);
+    border-left: 5px solid var(--tertiary-color);
 }
+
 
 /* Project Card Text */
 .project h3 {
-    color: var(--highlighted-white);
+    color: var(--text-dark);
 }
 
 /*
@@ -71,38 +84,39 @@ a, p {
     .about_me {
         padding: 10px 10px;
         margin: 10px 0;
-        border-radius: 10px;
     }
-    .samuel {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin: auto;
+    .about_me
+    .my_photo {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .samuel_drawn {
+        grid-template-columns: 40% 40%;
     }
     .about_me
     a, p {
-        font-size: 3vw;
+        font-size: 3.5vw;
+        margin: 10px;
     }
 
     /*-------------------- PROJECTS --------------------*/
     .projects_title {
-        margin-top: 20px;
-        margin-bottom: 5px;
-        font-size: 5vw;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 4.5vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* Projects Grid */
     .projects_grid {
         grid-template-columns: 80%;
-        gap: 10px;
+        gap: 25px;
     }
 
     /* Project Card */
     .project {
-        padding: 10px;
-        border-radius: 7px;
-    }
-    img, video {
-        border-radius: 5px;
+        padding: 15px;
     }
 
     /* Project Card Text */
@@ -131,15 +145,19 @@ a, p {
 
     /*-------------------- ABOUT ME --------------------*/
     .about_me {
-        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
         padding: 30px 20px;
         margin: 10px 30px;
     }
-    .samuel {
-        width: 75%;
+    .about_me
+    .text {
         display: grid;
-        grid-template-columns: 50% 50%;
-        margin: auto;
+        
+    }
+    .samuel_drawn > * {
+        width: 90%;
     }
     .about_me
     a, p {
@@ -148,27 +166,27 @@ a, p {
 
     /*-------------------- PROJECTS --------------------*/
     .projects_title {
-        margin-top: 20px;
-        margin-bottom: 5px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     /* Projects Grid */
     .projects_grid {
-        grid-template-columns: 33% 33% 33%;
-        gap: 30px;
+        width: 100%;
+        grid-template-columns: 30% 30% 30%;
+        gap: 5%;
     }
 
     /* Project Card */
     .project {
         padding: 10px;
-        border-radius: 10px;
-    }
-    img, video {
-        border-radius: 10px;
     }
 
     /* Project Card Text */
     .project h3 {
+        font-size: 1.5vw;
         margin-top: 10px;
     }
 }
