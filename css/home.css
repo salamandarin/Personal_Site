@@ -18,6 +18,11 @@ a, p {
     display: inline-block;
 }
 
+/* Links */
+.my_links {
+    text-align: center;
+}
+
 /*-------------------- PROJECTS --------------------*/
 .projects_title {
     text-align: center;
@@ -87,6 +92,10 @@ a, p {
         font-size: 3.5vw;
         margin: 10px;
     }
+    /* Links */
+    .my_links {
+        text-align: center;
+    }
 
     /*-------------------- PROJECTS --------------------*/
     .projects_title {
@@ -143,6 +152,11 @@ a, p {
     .about_me
     a, p {
         font-size: 1.7em;
+    }
+    /* Links */
+    .my_links {
+        text-align: center;
+        margin: 25px;
     }
 
     /*-------------------- PROJECTS --------------------*/
