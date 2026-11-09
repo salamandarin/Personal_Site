@@ -8,12 +8,6 @@
 .about_me {
     text-align: center;
 }
-.about_me
-img {
-    display: block;
-    margin: auto;
-    border-radius: 100%;
-}
 .samuel_drawn {
     display: grid;
     justify-content: center;
@@ -85,11 +79,6 @@ a, p {
         padding: 10px 10px;
         margin: 10px 0;
     }
-    .about_me
-    .my_photo {
-        width: 70%;
-        margin-bottom: 20px;
-    }
     .samuel_drawn {
         grid-template-columns: 40% 40%;
     }
@@ -145,23 +134,15 @@ a, p {
 
     /*-------------------- ABOUT ME --------------------*/
     .about_me {
-        display: grid;
-        grid-template-columns: 35% 65%;
-
         padding: 30px 20px;
         margin: 10px 30px;
     }
-    .about_me
-    .text {
-        display: grid;
-        
-    }
-    .samuel_drawn > * {
-        width: 90%;
+    .samuel_drawn {
+        grid-template-columns: 40% 40%;
     }
     .about_me
     a, p {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     /*-------------------- PROJECTS --------------------*/
