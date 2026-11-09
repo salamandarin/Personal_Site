@@ -70,8 +70,8 @@ img, video {
     transform: scale(1.01); /* increase size */
 }
 
-/* Card Class / Container Class */
-.card {
+/* Card Classes */
+.primary { /* Card color */
     border-left: 5px solid var(--secondary-color);
     border-top: 2px solid var(--secondary-dark);
     border-right: 2px solid var(--secondary-dark);
@@ -79,11 +79,11 @@ img, video {
 
     /* background-color: color-mix(in oklab, var(--primary-color), white 17%); */
 }
-.card-secondary {
+.secondary { /* Card color */
     background-color: var(--secondary-dark);
     border-left: 5px solid var(--secondary-color);
 }
-.card-tertiary {
+.tertiary { /* Card color */
     background-color: var(--tertiary-dark);
     border-left: 5px solid var(--tertiary-color);
 }
@@ -145,6 +145,12 @@ nav a:link {
     /* Left Indent */
     .left_indent {
         margin-left: 10px;
+    }
+
+    /*-------------------- STYLE CLASSES --------------------*/
+    /* Card Class */
+    .card {
+        padding: 20px;
     }
     
     /*-------------------- HEADER BAR --------------------*/
@@ -235,6 +241,12 @@ nav a:link {
     /* Left Indent */
     .left_indent {
         margin-left: 20px;
+    }
+
+    /*-------------------- STYLE CLASSES --------------------*/
+    /* Card Class */
+    .card {
+        padding: 25px;
     }
     
 
