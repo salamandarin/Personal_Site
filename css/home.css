@@ -14,8 +14,8 @@ img {
     margin: auto;
     border-radius: 100%;
 }
-.about_me
-a, p {
+.about_me a,
+.about_me p {
     display: inline-block;
 }
 
@@ -84,8 +84,8 @@ a, p {
         font-size: 8vw;
         font-weight: normal;
     }
-    .about_me
-    a, p {
+    .about_me a,
+    .about_me p {
         font-size: 3vw;
         margin-top: 15px;
     }
@@ -154,9 +154,9 @@ a, p {
         letter-spacing: 2px;
         font-weight: normal;
     }
-    .about_me
-    a, p {
-        font-size: 1.8vw;
+    .about_me a,
+    .about_me p {
+        font-size: 1.7vw;
         margin-top: 25px;
     }
 

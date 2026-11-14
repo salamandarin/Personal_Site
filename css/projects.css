@@ -82,8 +82,8 @@ li {
     /*-------------------- INDIVIDUAL PROJECTS --------------------*/
 
     /* Music Manager */
-    .music_manager
-    h1, h2 {
+    .music_manager h1,
+    .music_manager h2 {
         margin-bottom: 10px;
     }
     .music_manager
