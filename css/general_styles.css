@@ -14,9 +14,6 @@
     /* Colors - Text */
     --text-color: white;
     --text-dark: rgb(175, 175, 175);
-
-    /* Other */
-    --mobile-header-image-height: 12vw;
 }
 
 /* CSS Style Reset */
@@ -81,6 +78,9 @@ img, video {
 .tertiary_text {
     color: var(--tertiary-color);
 }
+.tertiary_bright_text {
+    color: var(--tertiary-bright);
+}
 .dark_text {
     color: var(--text_dark);
 }
@@ -142,7 +142,7 @@ img, video {
 
 /* ----- Font Class ----- */
 .code_font {
-    font-family: "Courier Prime", monospace;
+    font-family: "Courier New", monospace;
 }
 
 /*-------------------- HEADER BAR --------------------*/
@@ -199,27 +199,26 @@ header {
 
     .header_beginning {
         display: flex;
-        padding: 5px;
-        height: var(--mobile-header-image-height);
+        align-items: center; /* Center vertically */
+        padding: 5px 10px;
+        height: 10vw;
     }
 
     /* Hamburger Button */
     .hamburger {
-        margin: auto 10px;
         font-size: 8vw;
-        padding: 2px;
+        padding-bottom: 2px;
     }
 
     /* Website Logo */
     .website_logo {
-        /* center horizontally */
+        display: flex;
+        font-size: 4vw;
+
+        /* Center horizontally */
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-    }
-    .website_logo img {
-        height: var(--mobile-header-image-height);
-        max-width: 100vw;
     }
 
     /* Nav */
@@ -228,14 +227,13 @@ header {
         width: 100%;
     }
     nav a {
-        background-color: var(--primary-color);
-        border-top: 1px dotted var(--tertiary-color);
+        background-color: var(--secondary-color);
+        border-top: 2px solid var(--primary-color);
         display: block;
         text-align: center;
 
-        margin-bottom: 5px;
-        padding: 3px;
-        font-size: 5vw;
+        padding: 5px;
+        font-size: 3.7vw;
     }
     
     /* Nav Buttons */
@@ -286,28 +284,24 @@ header {
     /* Header Bar */
     header {
         width: 100%;
+
+        height: 60px;
+        padding: 0 25px;
     }
     header, .header_beginning {
         display: flex;
-        height: max-content;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; /* Center vertically */
     }
 
     /* Website Logo */
     .website_logo {
-        margin: 7px 15px;
-        height: max-content;
-    }
-    .website_logo img {
-        display: block;
-        height: 50px; 
+        display: flex;
+        align-items: center; /* Center vertically */
+        font-size: 21px;
     }
 
     /* Nav */
-    nav {
-        margin-right: 25px;
-    }
     nav a {
         margin: 5px;
     }
