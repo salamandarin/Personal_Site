@@ -26,6 +26,14 @@
     padding: 0;
 }
 
+/* Makes padding and border be included inside element's size */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*
 --------------------------------------------------------------------------------
         Styles for All Sizes
