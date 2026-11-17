@@ -1,18 +1,17 @@
-// mobile nav bar hamburger button
-function hamburger() {
-    let menu = document.querySelector("nav");
-    if(menu.style.display === "block") {
-      menu.style.display = "none";
-    }
-    else {
-      menu.style.display = "block";
-    }
+document.addEventListener('DOMContentLoaded', () => {
 
-    updateHeaderHeight()
-}
+  updateHeaderHeight(); // Header height
 
+  // Mobile nav bar hamburger button
+  const hamburger = document.querySelector("#hamburger");
+  const nav = document.querySelector("nav");
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  })
 
-// calculate header height
+});
+
+// Calculate header height (for css --header-height variable)
 function updateHeaderHeight() {
   const header = document.querySelector('header');
   document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
@@ -20,6 +19,5 @@ function updateHeaderHeight() {
   console.log(header.offsetHeight)
 }
 
-document.addEventListener('DOMContentLoaded', updateHeaderHeight);
 window.addEventListener('load', updateHeaderHeight);
 window.addEventListener('resize', updateHeaderHeight);

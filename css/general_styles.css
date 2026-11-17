@@ -14,6 +14,9 @@
     /* Colors - Text */
     --text-color: white;
     --text-dark: rgb(175, 175, 175);
+
+    /* Other */
+    --mobile-header-image-height: 40px;
 }
 
 /* CSS Style Reset */
@@ -46,7 +49,7 @@ body {
 
 /* Main Body */
 main {
-    margin-top: var(--header-height); /* offset to fit header */
+    margin-top: var(--header-height); /* Offset to fit header (var is from JS) */
 }
 
 /* Links (my default colors) */
@@ -87,8 +90,10 @@ img, video {
 
 /* ----- Links ----- */
 .link_unstyled {
-    color: inherit;
     text-decoration: none;
+}
+:where(.link_unstyled) {
+    color: inherit;
 }
 
 /* ----- Button Class (UNIVERSAL - no colored text on hover) ----- */
@@ -96,8 +101,8 @@ img, video {
     cursor: pointer;
 }
 .button:hover {
-    transition: transform .1s; /* animation speed */
-    transform: scale(1.01); /* increase size */
+    transition: transform .1s; /* Animation speed */
+    transform: scale(1.01); /* Increase size */
 }
 
 /* ----- Button Class - Primary (text color) ----- */
@@ -151,7 +156,7 @@ header {
     background-color: var(--primary-color);
     position: fixed;
     top: 0;
-    border-bottom: 2px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--tertiary-color);
 }
 /*
 --------------------------------------------------------------------------------
@@ -199,15 +204,17 @@ header {
 
     .header_beginning {
         display: flex;
+        justify-content: right; /* Hamburger to right corner */
         align-items: center; /* Center vertically */
         padding: 5px 10px;
-        height: 10vw;
+        height: var(--mobile-header-image-height);
     }
 
     /* Hamburger Button */
-    .hamburger {
+    #hamburger {
         font-size: 8vw;
         padding-bottom: 2px;
+        justify-content: right;
     }
 
     /* Website Logo */
@@ -215,7 +222,7 @@ header {
         display: flex;
         font-size: 4vw;
 
-        /* Center horizontally */
+        /* Center logo horizontally */
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -223,24 +230,58 @@ header {
 
     /* Nav */
     nav {
-        display: none;
+        /* Overlay Nav */
+        position: fixed; /* Overlaps website */
+        top: var(--mobile-header-image-height);
+        right: 0;
+        height: 100%;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.85); /* Translucent */
+        align-content: center; /* Center vertically */
+
+        /* Hidden by default */
+        opacity: 0;
+        visibility: hidden;
+        /* Delay visibility change until opacity finishes fading out */
+        transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    }
+    header .show {
+        opacity: 1;
+        visibility: visible;
+        /* Change visibility immediately when showing */
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    /* Nav Buttons */
+    nav .current_nav {
+        color: var(--text-color);
+        border-bottom: 2px solid var(--text-color);
     }
     nav a {
-        background-color: var(--secondary-color);
-        border-top: 2px solid var(--primary-color);
         display: block;
-        text-align: center;
+        width: fit-content;
 
-        padding: 5px;
-        font-size: 3.7vw;
-    }
-    
-    /* Nav Buttons */
-    nav .button:active {
-        background-color: var(--primary-light);
+        font-size: 7vw;
+        font-weight: bold;
+        margin: 30px;
         color: var(--text-dark);
+    
+        /* Start transparent and slightly shifted down */
+        opacity: 0;
+        transform: translateY(15px);
+        /* Reset delay to 0s so links disappear immediately on close */
+        transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
     }
+    /* Nav Buttons - Show */
+    header .show a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /* Staggered Delays (starts after the 0.3s nav background fades in) */
+    header .show a:nth-child(1) { transition-delay: 0.25s; }
+    header .show a:nth-child(2) { transition-delay: 0.35s; }
+    header .show a:nth-child(3) { transition-delay: 0.45s; }
+    header .show a:nth-child(4) { transition-delay: 0.55s; }
+    header .show a:nth-child(5) { transition-delay: 0.65s; }
 }
 /*
 --------------------------------------------------------------------------------
